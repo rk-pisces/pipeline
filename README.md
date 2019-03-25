@@ -28,7 +28,7 @@
 
 ```mermaid
 graph LR
-A(检出) --> B
+A(检出) --> B;
 ```
 
 
