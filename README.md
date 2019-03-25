@@ -28,12 +28,14 @@
 
 ​	DEV环境流水线定义如下：
 
- 	1. 代码检出——从GitLab上检出代码
- 	2. 静态代码检查——检查代码是否符合代码规范，依赖check-style.xml
- 	3. 单元测试——使用maven进行单元测试、契约测试，并提交单元测试结果到Sonar，依赖maven的jacoco插件
- 	4. 编译发布——maven打包，不要单元测试，将jar发布到Nexus服务器
- 	5. 生成Docker镜像——将上一步中jar包打成Docker镜像，将镜像发布到Nexus服务器
- 	6. 部署——通过jar包或镜像启动DEV环境
+
+
+1. 代码检出——从GitLab上检出代码
+2. 静态代码检查——检查代码是否符合代码规范，依赖check-style.xml
+3. 单元测试——使用maven进行单元测试、契约测试，并提交单元测试结果到Sonar，依赖maven的jacoco插件
+4. 编译发布——maven打包，不要单元测试，将jar发布到Nexus服务器
+5. 生成Docker镜像——将上一步中jar包打成Docker镜像，将镜像发布到Nexus服务器
+6. 部署——通过jar包或镜像启动DEV环境
 
 
 
